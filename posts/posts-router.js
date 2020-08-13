@@ -15,7 +15,7 @@ router.post("/api/posts", (req, res) => {
       .then((post) => {
         posts.findById(post.id).then((post) => {
             res.status(201).json(post)
-        })
+        }) 
       })
       .catch((error) => {
         console.log(error)
