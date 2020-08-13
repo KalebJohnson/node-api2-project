@@ -2,7 +2,7 @@ const express = require("express")
 const postsRouter = require("./posts/posts-router")
 
 const server = express()
-const port = 4000
+const port = process.env.PORT || 4000
 
 server.use(express.json())
 
